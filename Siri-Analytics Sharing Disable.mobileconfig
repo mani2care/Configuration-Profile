@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Assistant</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.assistant.support.6DC4C9D5-4FD4-4A7D-8378-85D40958F331</string>
+			<key>PayloadType</key>
+			<string>com.apple.assistant.support</string>
+			<key>PayloadUUID</key>
+			<string>6DC4C9D5-4FD4-4A7D-8378-85D40958F331</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>Siri Data Sharing Opt-In Status</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Stops Siri from being enabled.</string>
+	<key>PayloadDisplayName</key>
+	<string>Disable Siri</string>
+	<key>PayloadIdentifier</key>
+	<string>DisableSiri</string>
+	<key>PayloadOrganization</key>
+	<string></string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>A811DBC9-F81C-485C-9500-03376B5AE26D</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
