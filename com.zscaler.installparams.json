@@ -1,0 +1,68 @@
+{
+  "title": "com.zscaler.installparams",
+  "description": "Preference Domain: com.zscaler.installparams, Application: Zscaler",
+  "type": "object",
+  "properties": {
+    "installation-parameters": {
+      "title": "installation-parameters",
+      "propertyOrder": 10,
+      "type": "object",
+      "properties": {
+        "cloudName": {
+          "title": "cloudName",
+          "type": "string",
+          "propertyOrder": 20,
+          "description": "The name of the cloud on which your organization is provisioned. For example, if your cloud name is zscalertwo.net, you would enter zscalertwo."
+        },
+        "deviceToken": {
+          "title": "deviceToken",
+          "type": "string",
+          "propertyOrder": 30,
+          "description": "The appropriate device token from the Zscaler Client Connector Portal, if you want to use the Zscaler Client Connector Portal as an IdP."
+        },
+        "hideAppUIOnLaunch": {
+          "title": "hideAppUIOnLaunch",
+          "type": "string",
+          "propertyOrder": 40,
+          "description": "Forces the app window to stay hidden before users enroll. Users can always open the window by clicking the app icon in the system tray."
+        },
+        "launchTray": {
+          "title": "launchTray",
+          "type": "string",
+          "propertyOrder": 50,
+          "description": "By default, Zscaler Client Connector starts its services and user interface after installation. launchTray prevents Zscaler Client Connector from automatically starting after installation. Users must open Zscaler Client Connector manually to start the app, or Zscaler Client Connector automatically runs after the next reboot."
+        },
+        "policyToken": {
+          "title": "policyToken",
+          "type": "string",
+          "propertyOrder": 60,
+          "description": "Allows you to specify which app profile policy you want to enforce for the app before the user enrolls. All relevant settings associated with the policy apply, including the bypass of the IdP login page. Once the user enrolls, this policy is replaced with the app profile policy that matches the user based on group affiliation."
+        },
+        "strictEnforcement": {
+          "title": "strictEnforcement",
+          "type": "string",
+          "propertyOrder": 70,
+          "description": "Allows you to block internet traffic before the user enrolls in Zscaler Client Connector. strictEnforcement works when the forwarding profile action for Zscaler Client Connector is Tunnel or Tunnel with Local Proxy."
+        },
+        "userDomain": {
+          "title": "userDomain",
+          "type": "string",
+          "propertyOrder": 80,
+          "description": "This allows you to configure the user domain so that the users skip the Zscaler Client Connector enrollment page and directly go to the SSO login page."
+        },
+        "externalRedirect": {
+          "title": "externalRedirect",
+          "type": "string",
+          "propertyOrder": 90,
+          "description": "Allows you to redirect authentication to your organization’s SAML IdP through the Safari browser. When redirected to the browser for the first time, the users must select Remember Me on their IdP log-in screen. For any subsequent authentications, the browser remembers the user and automatically logs them in."
+        },
+        "enableFips": {
+          "title": "enableFips",
+          "type": "string",
+          "propertyOrder": 100,
+          "description": "Enabling this option indicates that Zscaler Client Connector uses FIPS-compliant libraries for communication with Zscaler infrastructure. Enter 1 to enable or 0 to disable this option. Enable this option only if you require FIPS-level security within your organization."
+        }
+      }
+    }
+  }
+}
