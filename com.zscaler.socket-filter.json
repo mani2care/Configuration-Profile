@@ -1,0 +1,189 @@
+{
+  "title": "com.zscaler.socket-filter",
+  "description": "Preference Domain: com.zscaler.socket-filter, Application: Zscaler",
+  "type": "object",
+  "properties": {
+    "VendorConfig": {
+      "title": "VendorConfig",
+      "propertyOrder": 10,
+      "type": "object",
+      "properties": {
+        "general": {
+          "type": "object",
+          "propertyOrder": 10,
+          "properties": {
+            "enforceTrafficViaTunnel": {
+              "title": "enforceTrafficViaTunnel",
+              "description": "If true, when the tunnel is not active, prevents circumvention of security by restricting network traffic when the Zscaler tunnel is not running.",
+              "type": "boolean"
+            }
+          }
+        },
+        "inbound": {
+          "type": "object",
+          "propertyOrder": 20,
+          "properties": {
+            "trustednet": {
+              "title": "trustednet",
+              "type": "array",
+              "items": {
+                "defaultProperties": [],
+                "format": "grid",
+                "properties": {
+                  "ips": {
+                    "title": "IP addresses",
+                    "description": "Specifies the set of remote IP addresses that the flow must match. Add a space or a comma to the delimited list of IP addresses and/or IP subnets. Mixed IPv4, IPv6 addresses, and 'lanlocal' are allowed.",
+                    "propertyOrder": 10,
+                    "type": "string"
+                  },
+                  "apps": {
+                    "title": "Applications",
+                    "description": "Specifies a flow's association with a particular application. This value must exactly match the teamid.bundleid, unless the app has no Team ID, in which case the app must exactly match the bundleid.",
+                    "propertyOrder": 20,
+                    "type": "string"
+                  },
+                  "ports": {
+                    "title": "Ports",
+                    "description": "Specifies what UDP or TCP ports cause the rule to match the flow. Add a space or comma to the delimited list of port numbers and/or port ranges. If 'protos' is configured and is set to 'icmp', the 'ports' attribute is ignored.",
+                    "propertyOrder": 30,
+                    "type": "string"
+                  },
+                  "action": {
+                    "title": "Action",
+                    "description": "Defines what action is taken if the rule matches. Select 'allow' or 'block'.",
+                    "propertyOrder": 40,
+                    "type": "string",
+                    "enum": [
+                      "block",
+                      "allow"
+                    ]
+                  }
+                }
+              }
+            },
+            "untrustednet": {
+              "title": "untrustednet",
+              "type": "array",
+              "items": {
+                "defaultProperties": [],
+                "format": "grid",
+                "properties": {
+                  "ips": {
+                    "title": "IP addresses",
+                    "description": "Specifies the set of remote IP addresses that the flow must match. Add a space or a comma to the delimited list of IP addresses and/or IP subnets. Mixed IPv4, IPv6 addresses, and 'lanlocal' are allowed.",
+                    "propertyOrder": 10,
+                    "type": "string"
+                  },
+                  "apps": {
+                    "title": "Applications",
+                    "description": "Specifies a flow's association with a particular application. This value must exactly match the teamid.bundleid, unless the app has no Team ID, in which case the app must exactly match the bundleid.",
+                    "propertyOrder": 20,
+                    "type": "string"
+                  },
+                  "ports": {
+                    "title": "Ports",
+                    "description": "Specifies what UDP or TCP ports cause the rule to match the flow. Add a space or comma to the delimited list of port numbers and/or port ranges. If 'protos' is configured and is set to 'icmp', the 'ports' attribute is ignored.",
+                    "propertyOrder": 30,
+                    "type": "string"
+                  },
+                  "action": {
+                    "title": "Action",
+                    "description": "Defines what action is taken if the rule matches. Select 'allow' or 'block'.",
+                    "propertyOrder": 40,
+                    "type": "string",
+                    "enum": [
+                      "block",
+                      "allow"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "outbound": {
+          "type": "object",
+          "propertyOrder": 30,
+          "properties": {
+            "trustednet": {
+              "title": "trustednet",
+              "type": "array",
+              "items": {
+                "defaultProperties": [],
+                "format": "grid",
+                "properties": {
+                  "ips": {
+                    "title": "IP addresses",
+                    "description": "Specifies the set of remote IP addresses that the flow must match. Add a space or a comma to the delimited list of IP addresses and/or IP subnets. Mixed IPv4, IPv6 addresses, and 'lanlocal' are allowed.",
+                    "propertyOrder": 10,
+                    "type": "string"
+                  },
+                  "apps": {
+                    "title": "Applications",
+                    "description": "Specifies a flow's association with a particular application. This value must exactly match the teamid.bundleid, unless the app has no Team ID, in which case the app must exactly match the bundleid.",
+                    "propertyOrder": 20,
+                    "type": "string"
+                  },
+                  "ports": {
+                    "title": "Ports",
+                    "description": "Specifies what UDP or TCP ports cause the rule to match the flow. Add a space or comma to the delimited list of port numbers and/or port ranges. If 'protos' is configured and is set to 'icmp', the 'ports' attribute is ignored.",
+                    "propertyOrder": 30,
+                    "type": "string"
+                  },
+                  "action": {
+                    "title": "Action",
+                    "description": "Defines what action is taken if the rule matches. Select 'allow' or 'block'.",
+                    "propertyOrder": 40,
+                    "type": "string",
+                    "enum": [
+                      "block",
+                      "allow"
+                    ]
+                  }
+                }
+              }
+            },
+            "untrustednet": {
+              "title": "untrustednet",
+              "type": "array",
+              "items": {
+                "defaultProperties": [],
+                "format": "grid",
+                "properties": {
+                  "ips": {
+                    "title": "IP addresses",
+                    "description": "Specifies the set of remote IP addresses that the flow must match. Add a space or a comma to the delimited list of IP addresses and/or IP subnets. Mixed IPv4, IPv6 addresses, and 'lanlocal' are allowed.",
+                    "propertyOrder": 10,
+                    "type": "string"
+                  },
+                  "apps": {
+                    "title": "Applications",
+                    "description": "Specifies a flow's association with a particular application. This value must exactly match the teamid.bundleid, unless the app has no Team ID, in which case the app must exactly match the bundleid.",
+                    "propertyOrder": 20,
+                    "type": "string"
+                  },
+                  "ports": {
+                    "title": "Ports",
+                    "description": "Specifies what UDP or TCP ports cause the rule to match the flow. Add a space or comma to the delimited list of port numbers and/or port ranges. If 'protos' is configured and is set to 'icmp', the 'ports' attribute is ignored.",
+                    "propertyOrder": 30,
+                    "type": "string"
+                  },
+                  "action": {
+                    "title": "Action",
+                    "description": "Defines what action is taken if the rule matches. Select 'allow' or 'block'.",
+                    "propertyOrder": 40,
+                    "type": "string",
+                    "enum": [
+                      "block",
+                      "allow"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
