@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>DefaultBrowserSettingEnabled</key>
+    <false/>
+    <key>HomepageIsNewTabPage</key>
+    <false/>
+    <key>HomepageLocation</key>
+    <string>https://yahoo.com</string>
+    <key>RestoreOnStartupURLs</key>
+    <array>
+        <string>https://yahoo.com</string>
+    </array>
+    <key>RestoreOnStartup</key>
+    <integer>4</integer>
+    <key>ShowHomeButton</key>
+    <true/>
+    <key>IncognitoModeAvailability</key>
+    <integer>1</integer>
+    <Key>HomepageIsNewTabPage</key>
+    <true>
+</dict>
+</plist>
