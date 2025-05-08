@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>AllowTenantList</key>
+    <array>
+        <dict>
+            <key>0000000-00000-0000-0000-0000000</key>
+            <true/>
+        </dict>
+    </array>
+    <key>BlockExternalSync</key>
+    <true/>
+    <key>DisablePersonalSync</key>
+    <true/>
+    <key>DisableTutorial</key>
+    <true/>
+    <key>FilesOnDemandEnabled</key>
+    <true/>
+    <key>HideDockIcon</key>
+    <true/>
+    <key>OpenAtLogin</key>
+    <true/>
+    <key>KFMBlockOptOut</key>
+    <true/>
+    <key>KFMSilentOptIn</key>
+    <string>0000000-00000-0000-0000-0000000</string>
+    <key>KFMSilentOptInWithNotification</key>
+    <false/>
+    <key>DefaultFolder</key>
+      <dict>
+        <key>Path</key>
+        <string>~/</string>
+        <key>TenantId</key>
+        <string>0000000-00000-0000-0000-0000000</string>
+      </dict>
+  </dict>
+</plist>
